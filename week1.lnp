@@ -1,0 +1,4 @@
+--device DARMP "startup.o" "weekone.o" --rwpi --strict --scatter "week1.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\week1.map" -o "week1.axf"

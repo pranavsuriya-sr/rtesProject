@@ -1,0 +1,20 @@
+*** Creating Trace Output File 'week1.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"weekone.o"'
+### ADS-LD Command completed:
+--device DARMP "startup.o" "weekone.o" --rwpi --strict --scatter "week1.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\week1.map" -o "week1.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'week1.axf'
+### ADS-LD Command File: 'week1.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'week1.lnp', Handle=0x00000360
+### Writing '.lnp' file
+### ADS-LD Command file 'week1.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
