@@ -26,7 +26,7 @@ int main()
   lcd_initialize();
   while (1)
   {
-    if (!(IO0PIN & (1 << 12))) // Check for button 1 press
+    if (!(IO0PIN & (1 << 12)))
     {
 		if(!(IO0PIN & (1 << 15)))
 		{
@@ -35,21 +35,21 @@ int main()
 			  if(gear == 1)
 			  {																				    
 			  	lcd_display();
-				IO0SET = 0x00000800; // Assuming this is for turning on the LCD, adjust as needed
+				IO0SET = 0x00000800; 
 			  }   // Clear the LCD
 			  else if(gear == 2)
 			  {
 			  	lcd_display2();
-				IO0SET = 0x00000800; // Assuming this is for turning on the LCD, adjust as needed
+				IO0SET = 0x00000800; 
 			  } 
 			  else if(gear == 3)
 			  {
 			  	lcd_display3();
-				IO0SET = 0x00000800; // Assuming this is for turning on the LCD, adjust as needed
+				IO0SET = 0x00000800; 
 			  } 
 			  else
 		    	{
-		      	lcd_clear(); // Clear the LCD if no switch is pressed
+		      	lcd_clear(); 
 		    	}
 		}
 		else if(!(IO0PIN & (1 << 13)))
@@ -59,33 +59,33 @@ int main()
 			  if(gear == 1)
 			  {
 			  	lcd_display();
-				IO0SET = 0x00000800; // Assuming this is for turning on the LCD, adjust as needed
+				IO0SET = 0x00000800; 
 			  }   // Clear the LCD
 			  else if(gear == 2)
 			  {
 			  	lcd_display2();
-				IO0SET = 0x00000800; // Assuming this is for turning on the LCD, adjust as needed
+				IO0SET = 0x00000800; 
 			  } 
 			  else if(gear == 3)
 			  {
 			  	lcd_display3();
-				IO0SET = 0x00000800; // Assuming this is for turning on the LCD, adjust as needed
+				IO0SET = 0x00000800; 
 			  } 
 			  else
 		    	{
-		      	lcd_clear(); // Clear the LCD if no switch is pressed
+		      	lcd_clear(); 
 		    	}
 		}
 		 else
 		    	{
-		      	lcd_clear(); // Clear the LCD if no switch is pressed
+		      	lcd_clear(); 
 		    	}
 
     }
     
 	else
     {
-      lcd_clear(); // Clear the LCD if no switch is pressed
+      lcd_clear(); 
     }
   }
 }
